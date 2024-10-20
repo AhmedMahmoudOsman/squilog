@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       colors:{
-        Diamond:'#C0F0FB',
+        Diamond:'#49fa57',
         Darkgrey:"#263032",
         Dark:"#131819",
         whitex:"#fbfbfb",

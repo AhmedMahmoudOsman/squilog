@@ -2,5 +2,37 @@
 @import url('https://fonts.cdnfonts.com/css/game-of-squids');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
-    background-color: #000;
+    background-color: #282828;
+  }
+
+  .pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .pagination li{
+    margin: 0 5px;
+    font-weight: bold;
+  }
+  .pagination a{
+
+    display: inline-block;
+    padding: 5px 10px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .pagination a:hover{
+    background: #121212;
+  }
+
+  .pagination li.activePagination{
+    background-color: #717171;
+    color: #fff;
+    border-radius: 4px;
   }

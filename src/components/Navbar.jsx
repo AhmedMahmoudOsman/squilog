@@ -19,7 +19,7 @@ const Navbar = () => {
 
     return (
         <header className={`bg-Darkgrey text-whitex fixed top-0 left-0 right-0 w-full z-50 border-b-white`}>
-            <nav className='px-4 py-4 max-w-7xl mx-auto flex justify-between items-center '>
+            <nav className='px-4 py-4 max-w-7xl mx-auto flex justify-between items-center'>
                 <a href="/" className='text-3xl font-bold text-Diamond'> <span className='logo font-logo'>squilog</span></a>
 
                 <ul className='md:flex gap-12 text-lg hidden'>

@@ -15,13 +15,13 @@ const Pagination = ({onPageChange,currentPage,article,pageSize}) => {
   return (
     <div>
 
-        <ul>
+        <ul className=' pagination my-8 flex-wrap gap-4 text-whitex  '>
             <li>
-                <button onClick={()=> onPageChange(currentPage -1)} className='text-whitex'>Previous</button>
+                <button onClick={()=> onPageChange(currentPage -1)} disabled={currentPage===1} className='text-whitex'>Previous</button>
             </li>
-            <div>{renderPaginationLinks()}</div>
+            <div className='flex '>{renderPaginationLinks()}</div>
             <li>
-                <button className='text-whitex'>Next</button>
+                <button onClick={()=> onPageChange(currentPage +1)} disabled={currentPage===totalPage}  className='text-whitex'>Next</button>
             </li>
         </ul>
         

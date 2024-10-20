@@ -55,7 +55,7 @@ const ArticlePage = () => {
         
         {/* pagination */}
         <div>
-          <Pagination  onPageChange={handlePageChange} currentPage={currentPage} article={article}/>
+          <Pagination  onPageChange={handlePageChange} currentPage={currentPage} article={article} pageSize={pageSize}/>
         </div>
     </div>
   )

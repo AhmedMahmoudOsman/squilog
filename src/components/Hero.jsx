@@ -3,126 +3,133 @@ import React from 'react'
 function Hero() {
   return (
     <div className='px-4 py-32 mx-auto fo'>
-  {/* Slider */}
-  <div className="px-4 lg:px-6 lg:px-8 py-10">
-    <div
-      data-hs-carousel='{
-"loadingClasses": "opacity-0"
-    }'
-      className="relative"
-    >
-      <div className="hs-carousel relative overflow-hidden w-full h-[30rem] md:h-[calc(100vh-106px)]  bg-gray-100 rounded-2xl dark:bg-neutral-800">
-        <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-          {/* Item */}
-          <div className="hs-carousel-slide">
-            <div className="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('https://images.unsplash.com/photo-1615615228002-890bb61cac6e?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat">
-              <div className="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
-                <span className="block text-white  font-logo">Sports</span>
-                <span className="block text-white text-xl md:text-3xl font-logo">
-                  Rewriting sport's playbook for billions of athletes
-                </span>
-                <div className="mt-5">
-                  <a
-                    className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded bg-white border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-                    href="#"
-                  >
-                    Read More 
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* End Item */}
-          {/* Item */}
-          <div className="hs-carousel-slide">
-            <div className="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat">
-              <div className="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
-                <span className="block text-white font-logo">Technology</span>
-                <span className="block text-white text-xl md:text-3xl font-logo">
-                  From mobile apps to gaming consoles Explore Mobile games And Apps
-                </span>
-                <div className="mt-5">
-                  <a
-                    className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded bg-white border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-                    href="#"
-                  >
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* End Item */}
-          {/* Item */}
-          <div className="hs-carousel-slide">
-            <div className="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('https://images.unsplash.com/photo-1629666451094-8908989cae90?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat">
-              <div className="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
-                <span className="block text-white font-logo">Art</span>
-                <span className="block text-white text-xl md:text-3xl font-logo">
-                  Bringing Art to everything
-                </span>
-                <div className="mt-5">
-                  <a
-                    className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded bg-white border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-                    href="#"
-                  >
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* End Item */}
-        </div>
-      </div>
-      {/* Arrows */}
-      <button
-        type="button"
-        className="hs-carousel-prev hs-carousel-disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-12 h-full text-black hover:bg-white/20 rounded-s-2xl focus:outline-none focus:bg-white/20"
-      >
-        <span className="text-2xl" aria-hidden="true">
-          <svg
-            className="shrink-0 size-3.5 md:size-4"
-            xmlns="http://www.w3.org/2000/svg"
-            width={18}
-            height={299}
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fillRule="evenodd"
-              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-            />
-          </svg>
-        </span>
-        <span className="sr-only">Previous</span>
-      </button>
-      <button
-        type="button"
-        className="hs-carousel-next hs-carousel-disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-12 h-full text-black hover:bg-white/20 rounded-e-2xl focus:outline-none focus:bg-white/20"
-      >
-        <span className="sr-only">Next</span>
-        <span className="text-2xl" aria-hidden="true">
-          <svg
-            className="shrink-0 size-3.5 md:size-4"
-            xmlns="http://www.w3.org/2000/svg"
-            width={16}
-            height={16}
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fillRule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-            />
-          </svg>
-        </span>
-      </button>
-      {/* End Arrows */}
+        {/* Card Article top*/}
+  <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mt-28">
+    {/* Title */}
+    <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+      <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
+        Insights
+      </h2>
+      <p className="mt-1 text-gray-600 dark:text-neutral-400">
+      Stay in the know latest Articles 
+      </p>
     </div>
+    {/* End Title */}
+    {/* Grid */}
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Card */}
+      <a className="group flex flex-col focus:outline-none" href="#">
+        <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
+          <img
+            className="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
+            src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+            alt="Blog Image"
+          />
+          <span className="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-neutral-900">
+            Sponsored
+          </span>
+        </div>
+        <div className="mt-7">
+          <h3 className="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-neutral-300 dark:group-hover:text-white">
+            Studio by Squilog
+          </h3>
+          <p className="mt-3 text-gray-800 dark:text-neutral-200">
+            Produce professional, reliable streams easily leveraging Squilogs
+            innovative broadcast studio
+          </p>
+          <p className="mt-5 inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium dark:text-blue-500">
+            Read more
+            <svg
+              className="shrink-0 size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width={24}
+              height={24}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </p>
+        </div>
+      </a>
+      {/* End Card */}
+      {/* Card */}
+      <a className="group flex flex-col focus:outline-none" href="#">
+        <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
+          <img
+            className="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
+            src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+            alt="Blog Image"
+          />
+        </div>
+        <div className="mt-7">
+          <h3 className="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-neutral-300 dark:group-hover:text-white">
+            Onsite
+          </h3>
+          <p className="mt-3 text-gray-800 dark:text-neutral-200">
+            Optimize your in-person experience with best-in-class capabilities
+            like badge printing and lead retrieval
+          </p>
+          <p className="mt-5 inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium dark:text-blue-500">
+            Read more
+            <svg
+              className="shrink-0 size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width={24}
+              height={24}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </p>
+        </div>
+      </a>
+      {/* End Card */}
+      {/* Card */}
+      <a
+        className="group relative flex flex-col w-full min-h-60 bg-[url('https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80')] bg-center bg-cover rounded-xl hover:shadow-lg focus:outline-none focus:shadow-lg transition"
+        href="#"
+      >
+        <div className="flex-auto p-4 md:p-6">
+          <h3 className="text-xl text-white/90 group-hover:text-white">
+            <span className="font-bold">Aqualine</span> Press publishes Article
+            about economic and technological.
+          </h3>
+        </div>
+        <div className="pt-0 p-4 md:p-6">
+          <div className="inline-flex items-center gap-2 text-sm font-medium text-white group-hover:text-white/70 group-focus:text-white/70">
+            Visit the site
+            <svg
+              className="shrink-0 size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width={24}
+              height={24}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </div>
+        </div>
+      </a>
+      {/* End Card */}
+    </div>
+    {/* End Grid */}
   </div>
-  {/* End Slider */}
-
+  {/* End Card Article top */}
     </div>
   )
 }

@@ -1,0 +1,25 @@
+@import url('https://fonts.cdnfonts.com/css/game-of-squids');
+
+
+
+
+header{
+    border-bottom: 1px #fbfbfb solid  ;
+}
+/* navbar.css */
+.menu {
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0; 
+    opacity: 0; 
+    overflow: hidden; 
+}
+
+.menu.open {
+    max-height: 500px; 
+    opacity: 1; 
+}
+
+.active{
+    @apply text-Diamond;
+}
+

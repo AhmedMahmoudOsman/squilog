@@ -7,7 +7,7 @@ const ArticleCard = ({ article ,currentPage,selectedCategory,pageSize }) => {
   .slice((currentPage -1)*pageSize , currentPage * pageSize);
   console.log(filterblog);
   return (
-    <div className='max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto'>
+    <div className='max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mt-6'>
       <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-6'>
         {filterblog.map((article) => (
           <Link key={article.id}>

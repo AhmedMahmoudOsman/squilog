@@ -12,6 +12,7 @@ export default {
         Darkgrey:"#263032",
         Dark:"#131819",
         whitex:"#fbfbfb",
+        maincolor:"#242535",
       },
       fontFamily: {
         Primary: ['Poppins', 'sans-serif'],

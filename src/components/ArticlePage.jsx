@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ArticleCard from './ArticleCard';
 import Pagination from './Pagination';
+import CategorySelecetion from './CategorySelecetion';
 
 const ArticlePage = () => {
 
@@ -45,18 +46,20 @@ const ArticlePage = () => {
     <div>
         {/* category section */}
         <div>
-            category
+          <CategorySelecetion onSelectCategory={handleCategoryChange} selectedCategory={selectedCategory} activeCategory={activeCategory} />
         </div>
         {/* article card section */}
         <div>
           <ArticleCard article={article} currentPage={currentPage} selectedCategory={selectedCategory} pageSize={pageSize}/>
 
         </div>
+
         
         {/* pagination */}
         <div>
           <Pagination  onPageChange={handlePageChange} currentPage={currentPage} article={article} pageSize={pageSize}/>
         </div>
+     
     </div>
   )
 }

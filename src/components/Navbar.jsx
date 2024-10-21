@@ -17,8 +17,9 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+
     return (
-        <header className={`bg-Darkgrey text-whitex fixed top-0 left-0 right-0 w-full z-50 border-b-white`}>
+        <header className={`bg-white bg-opacity-20 backdrop-blur-md sticky text-white fixed top-0 left-0 right-0 w-full z-50 border-b-white w-[70%] mr-auto ml-auto mt-2 rounded-full`}>
             <nav className='px-4 py-4 max-w-7xl mx-auto flex justify-between items-center'>
                 <a href="/" className='text-3xl font-bold text-Diamond'> <span className='logo font-logo'>squilog</span></a>
 
@@ -36,8 +37,8 @@ const Navbar = () => {
                     {/* <a href="/" className='hover:text-Diamond'><FaFacebookF /></a>
                     <a href="/" className='hover:text-Diamond'><FaTwitter /></a>
                     <a href="/" className='hover:text-Diamond'><FaInstagram /></a> */}
-                    <button className='bg-Dark text-white border border-Diamond-1 py-2 px-12 rounded font-bold'>Login</button>
-                    <button className='bg-Diamond text-Dark py-2 px-12 rounded font-bold'>Sign Up</button>
+                    <p className=' text-white  font-bold'>Login</p>
+                    <button className='bg-Diamond text-Dark py-2 px-12 rounded-full font-bold'>Sign Up</button>
                 </div>
 
                 <div className='md:hidden'>

@@ -24,12 +24,13 @@ const Footer = () => {
             className="text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-blue-500"
             href="#"
           >
-            {/* Htmlstream */}
-          </a>{" "}
+            
+          </a>
+          {/* {" Squilog "} */}
           {/* family. */}
         </p>
         <p className="text-gray-500 dark:text-neutral-500 font-logo">
-          {/* © 2024 Squilog Labs. */}
+          © 2024 Squilog Labs.
         </p>
       </div>
       {/* Social Brands */}

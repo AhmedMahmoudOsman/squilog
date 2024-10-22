@@ -9,7 +9,7 @@ const Navbar = () => {
         { path: "/ourstory", link: "Our Story" },
         { path: "/membership", link: "Membership" },  
         { path: "/articles", link: "Articles" },
-        { path: "/contact", link: "Contact" },
+        
     ];
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -10,7 +10,9 @@ import Home from './pages/Home.jsx';
 import OurStory from './pages/OurStory.jsx';
 import Membership from './pages/Membership.jsx';
 import Articles from './pages/Articles.jsx';
-import Contact from './pages/Contact.jsx';
+import SingleArticle from './pages/SingleArticle.jsx';
+
+
 
 const router = createBrowserRouter([
   {
@@ -33,9 +35,12 @@ const router = createBrowserRouter([
       path:"/membership",
       element:<Membership/>
     },
-    {
-      path:"/contact",
-      element:<Contact/>
+    ,{
+
+      // get single article
+      path:"/articles/:id",
+      element:<SingleArticle/>,
+      loader:({params}) =>fetch(`https://json-server-pi-peach.vercel.app/blogs/${params.id}`)
     }
   
   ]

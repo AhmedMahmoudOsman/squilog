@@ -19,7 +19,7 @@ const Pagination = ({onPageChange,currentPage,article,pageSize}) => {
             <li>
                 <button onClick={()=> onPageChange(currentPage -1)} disabled={currentPage===1} className='text-whitex'>Previous</button>
             </li>
-            <div className='flex '>{renderPaginationLinks()}</div>
+            <div className='flex gap-1'>{renderPaginationLinks()}</div>
             <li>
                 <button onClick={()=> onPageChange(currentPage +1)} disabled={currentPage===totalPage}  className='text-whitex'>Next</button>
             </li>

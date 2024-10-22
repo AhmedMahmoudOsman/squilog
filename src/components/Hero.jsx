@@ -32,31 +32,6 @@ function Hero() {
             See how game-changing articles are making the most of every engagement with Squilog.
             </p>
           </div>
-          {/* Buttons */}
-          <div className="mt-8 gap-3 flex justify-center">
-            <Link to={'/articles'}
-              className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
-              href="#"
-            >
-              Discover
-              <svg
-                className="shrink-0 size-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width={24}
-                height={24}
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="m9 18 6-6-6-6" />
-              </svg>
-            </Link>
-            
-          </div>
-          {/* End Buttons */}
         </div>
       </div>
     </div>

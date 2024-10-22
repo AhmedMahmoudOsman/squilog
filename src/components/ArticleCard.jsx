@@ -9,8 +9,8 @@ const ArticleCard = ({ article ,currentPage,selectedCategory,pageSize }) => {
   return (
     <div className='max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mt-6'>
       <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-6'>
-        {filterblog.map((article) => (
-          <Link key={article.id}>
+        {filterblog.map((article) =>  (
+          <Link to={`/articles/${article.id}`} key={article.id}>
             {/* Card */}
             <a
               className='group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl p-5 dark:border-neutral-700 dark:hover:border-transparent dark:hover:shadow-black/40 dark:focus:border-transparent dark:focus:shadow-black/40'

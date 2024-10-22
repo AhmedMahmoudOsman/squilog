@@ -6,7 +6,7 @@ import { FaBars, FaFacebookF, FaInstagram, FaTwitter, FaXmark } from "react-icon
 const Navbar = () => {
     const navItem = [
         { path: "/", link: "Home" },
-        { path: "/ourstory", link: "OurStory" },
+        { path: "/ourstory", link: "Our Story" },
         { path: "/membership", link: "Membership" },  
         { path: "/articles", link: "Articles" },
         { path: "/contact", link: "Contact" },

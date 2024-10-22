@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
 
-<footer className="w-full py-5 sm:py-10 px-4 bg-maincolor border"> {/* Container */}
+<footer className="w-full py-5 sm:py-10 px-4 bg-maincolor border-t-2"> {/* Container */}
       <h2 className="sr-only">Footer</h2>
       <div className="flex flex-col-reverse sm:flex-row md:justify-between lg:justify-around">
 
@@ -49,7 +49,7 @@ const Footer = () => {
               </a>
             </span>
             {/* :::Copyright */}
-            <span className="py-4 text-xs">&copy;2024,Squilog All Rights Reserved.</span>
+            <span className="py-4 text-xs">&copy;2024 Squilog All Rights Reserved.</span>
           </div>
         </div>
 

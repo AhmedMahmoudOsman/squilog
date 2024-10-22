@@ -15,7 +15,7 @@ const OurStory = () => {
     <div>
         <div className='our-story-head'>
           <div className='our-story-content'>
-            <p>Every idea needs a <span className='font-logo text-white'>Squilog.</span></p>
+            <p className='text-white'>Every idea needs a <span className='font-logo text-white'>Squilog.</span></p>
           </div>
         </div>
 
@@ -23,11 +23,11 @@ const OurStory = () => {
         <div className='our-story-content-main'>
             <div className='our-story-content-main-left'>
               <div className='our-story-main-content'>
-                <p>
+                <p className='text-white'>
                 The best ideas can change who we are. squilog is the place where these ideas crystallize and spark powerful conversations. We are an open platform where more than many readers come to find insightful and dynamic ideas. Here, expert and undiscovered voices alike dive into the heart of any topic and bring new ideas to the surface. Our goal is to spread these ideas and deepen understanding of the world.
                 </p>
                 <br />
-                <p>
+                <p className='text-white'>
                 We’re creating a new model for digital publishing. One that supports nuance, complexity, and vital storytelling without giving in to the incentives of advertising. It’s an environment that’s open to everyone but promotes substance and authenticity. And it’s where deeper connections forged between readers and writers can lead to discovery and growth. Together with millions of collaborators, we’re building a trusted and vibrant ecosystem fueled by important ideas and the people who think about them.
                 </p>
               </div>

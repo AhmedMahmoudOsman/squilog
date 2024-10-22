@@ -1,107 +1,93 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <>
-  {/* ========== FOOTER ========== */}
-  <footer className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
-    {/* Grid */}
-    <div className="text-center">
-      <div>
-        <a
-          className="flex-none text-xl font-semibold text-black dark:text-white font-logo"
-          href="#"
-          aria-label="Brand"
-        >
-          Squilog
-        </a>
+
+<footer className="w-full py-5 sm:py-10 px-4 bg-gray-800"> {/* Container */}
+      <h2 className="sr-only">Footer</h2>
+      <div className="flex flex-col-reverse sm:flex-row md:justify-between lg:justify-around">
+
+        {/* :SITE NAME & SOCIAL NETWORKS */}
+        <div className="relative mt-14 sm:mt-0 px-5 flex flex-col justify-center items-center text-gray-500">
+          {/* ::Site name */}
+          <h1 className="font-title text-4xl text-center font-semibold mt-auto font font-logo">Squilog</h1>
+          {/* ::Social & copyright */}
+          <div className="mt-auto flex flex-col items-center">
+            {/* :::Social */}
+            <span className="inline-flex mt-6 w-full justify-center md:justify-start md:w-auto">
+              {/* Facebook */}
+              <a href="#link" className="text-gray-200">
+                <span className="sr-only">Facebook</span>
+                <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              {/* Twitter */}
+              <a href="#link" className="ml-3 text-gray-200">
+                <span className="sr-only">Twitter</span>
+                <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              {/* Instagram */}
+              <a href="#link" className="ml-3 text-gray-200">
+                <span className="sr-only">Instagram</span>
+                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              {/* Linkedin */}
+              <a href="#link" className="ml-3 text-gray-200">
+                <span className="sr-only">Linkedin</span>
+                <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0" className="w-6 h-6" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+            {/* :::Copyright */}
+            <span className="py-4 text-xs">&copy;2024,Squilog All Rights Reserved.</span>
+          </div>
+        </div>
+
+        {/* :NAVIGATION */}
+        <div className="grid grid-cols-2 gap-5 text-gray-400">
+          {/* ::Navigation */}
+          <div className="col-span-2 md:col-span-1 pb-0 md:py-3 px-4">
+            <h3 className="py-1.5 md:py-4 text-center sm:text-left text-xl text-gray-500 font-bold tracking-wide">Menu</h3>
+            <nav className="flex justify-around md:flex-col font-medium list-none">
+              <li><Link to={'/'} href="#link" className="hover:text-gray-200">Home</Link></li>
+              <li><Link to={"/articles"} href="#link" className="hover:text-gray-200">Category</Link></li>
+              <li><Link to={"/membership"} href="#link" className="hover:text-gray-200">Membership</Link></li>
+              <li><Link to={"/ourstory"} href="#link" className="hover:text-gray-200">OurStory</Link></li>
+            </nav>
+          </div>
+          {/* ::Address */}
+          <div className="col-span-2 md:col-span-1 pb-0 md:py-3 px-4 flex flex-col items-center sm:items-start">
+            <h3 className="py-1.5 md:py-4 text-xl text-gray-500 font-bold tracking-wide">Address</h3>
+            <p className="md:w-48 text-center sm:text-left text-lg md:text-xl font-medium">Alexandria Egept</p>
+          </div>
+          {/* ::Email */}
+          <div className="col-span-2 md:col-span-1 pb-0 md:py-3 px-4 flex flex-col items-center sm:items-start">
+            <h3 className="py-1.5 md:py-4 text-xl text-gray-500 font-bold tracking-wide font-logo">Squilog</h3>
+            <p className="inline-flex justify-center sm:justify-start text-sm text-gray-400 font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" className="mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+              <a href="#email">squilog@mail.com</a>
+            </p>
+          </div>
+          
+        </div>
+
       </div>
-      {/* End Col */}
-      <div className="mt-3">
-        <p className="text-gray-500 dark:text-neutral-500">
-          {/* We're part of the{" "} */}
-          <a
-            className="text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-blue-500"
-            href="#"
-          >
-            
-          </a>
-          {/* {" Squilog "} */}
-          {/* family. */}
-        </p>
-        <p className="text-gray-500 dark:text-neutral-500 font-logo">
-          © 2024 Squilog Labs.
-        </p>
-      </div>
-      {/* Social Brands */}
-      <div className="mt-3 space-x-2">
-        <a
-          className="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-          href="#"
-        >
-          <svg
-            className="shrink-0 size-3.5"
-            xmlns="http://www.w3.org/2000/svg"
-            width={16}
-            height={16}
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          >
-            <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
-          </svg>
-        </a>
-        <a
-          className="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-          href="#"
-        >
-          <svg
-            className="shrink-0 size-3.5"
-            xmlns="http://www.w3.org/2000/svg"
-            width={16}
-            height={16}
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          >
-            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-          </svg>
-        </a>
-        <a
-          className="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-          href="#"
-        >
-          <svg
-            className="shrink-0 size-3.5"
-            xmlns="http://www.w3.org/2000/svg"
-            width={16}
-            height={16}
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          >
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-          </svg>
-        </a>
-        <a
-          className="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-          href="#"
-        >
-          <svg
-            className="shrink-0 size-3.5"
-            xmlns="http://www.w3.org/2000/svg"
-            width={16}
-            height={16}
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          >
-            <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z" />
-          </svg>
-        </a>
-      </div>
-      {/* End Social Brands */}
-    </div>
-    {/* End Grid */}
-  </footer>
-  {/* ========== END FOOTER ========== */}
-</>
+    </footer>
+
+    </>
 
   )
 }

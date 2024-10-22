@@ -1,136 +1,71 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Hero() {
   return (
     <div className='px-4 py-32 mx-auto fo'>
-        {/* Card Article top*/}
-  <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mt-28">
-    {/* Title */}
-    <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-      <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
-        Insights
-      </h2>
-      <p className="mt-1 text-gray-600 dark:text-neutral-400">
-      Stay in the know latest Articles 
-      </p>
+    <>
+  {/* Hero */}
+  <div className="relative overflow-hidden rounded">
+    {/* Gradients */}
+    <div
+      aria-hidden="true"
+      className="flex absolute -top-96 start-1/2 transform -translate-x-1/2"
+    >
+      <div className="bg-gradient-to-r from-violet-300/50 to-purple-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-violet-900/50 dark:to-purple-900" />
+      <div className="bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-blue-900/70" />
     </div>
-    {/* End Title */}
-    {/* Grid */}
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {/* Card */}
-      <a className="group flex flex-col focus:outline-none" href="#">
-        <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-          <img
-            className="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
-            src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
-            alt="Blog Image"
-          />
-          <span className="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-neutral-900">
-            Sponsored
-          </span>
-        </div>
-        <div className="mt-7">
-          <h3 className="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-neutral-300 dark:group-hover:text-white">
-            Studio by Squilog
-          </h3>
-          <p className="mt-3 text-gray-800 dark:text-neutral-200">
-            Produce professional, reliable streams easily leveraging Squilogs
-            innovative broadcast studio
-          </p>
-          <p className="mt-5 inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium dark:text-blue-500">
-            Read more
-            <svg
-              className="shrink-0 size-4"
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="m9 18 6-6-6-6" />
-            </svg>
-          </p>
-        </div>
-      </a>
-      {/* End Card */}
-      {/* Card */}
-      <a className="group flex flex-col focus:outline-none" href="#">
-        <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-          <img
-            className="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
-            src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
-            alt="Blog Image"
-          />
-        </div>
-        <div className="mt-7">
-          <h3 className="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-neutral-300 dark:group-hover:text-white">
-            Onsite
-          </h3>
-          <p className="mt-3 text-gray-800 dark:text-neutral-200">
-            Optimize your in-person experience with best-in-class capabilities
-            like badge printing and lead retrieval
-          </p>
-          <p className="mt-5 inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 group-hover:underline group-focus:underline font-medium dark:text-blue-500">
-            Read more
-            <svg
-              className="shrink-0 size-4"
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="m9 18 6-6-6-6" />
-            </svg>
-          </p>
-        </div>
-      </a>
-      {/* End Card */}
-      {/* Card */}
-      <a
-        className="group relative flex flex-col w-full min-h-60 bg-[url('https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80')] bg-center bg-cover rounded-xl hover:shadow-lg focus:outline-none focus:shadow-lg transition"
-        href="#"
-      >
-        <div className="flex-auto p-4 md:p-6">
-          <h3 className="text-xl text-white/90 group-hover:text-white">
-            <span className="font-bold">Aqualine</span> Press publishes Article
-            about economic and technological.
-          </h3>
-        </div>
-        <div className="pt-0 p-4 md:p-6">
-          <div className="inline-flex items-center gap-2 text-sm font-medium text-white group-hover:text-white/70 group-focus:text-white/70">
-            Visit the site
-            <svg
-              className="shrink-0 size-4"
-              xmlns="http://www.w3.org/2000/svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="m9 18 6-6-6-6" />
-            </svg>
+    {/* End Gradients */}
+    <div className="relative z-10">
+      <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+        <div className="max-w-2xl text-center mx-auto">
+         
+          {/* Title */}
+          <div className="mt-5 max-w-2xl">
+            <h1 className="block font-semibold text-gray-800 text-4xl md:text-5xl font-logo lg:text-6xl  dark:text-neutral-200">
+            The Squilog
+            </h1>
           </div>
+          {/* End Title */}
+          <div className="mt-5 max-w-3xl">
+            <p className="text-lg text-gray-600 dark:text-neutral-400">
+            See how game-changing articles are making the most of every engagement with Squilog.
+            </p>
+          </div>
+          {/* Buttons */}
+          <div className="mt-8 gap-3 flex justify-center">
+            <Link to={'/articles'}
+              className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+              href="#"
+            >
+              Discover
+              <svg
+                className="shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </Link>
+            
+          </div>
+          {/* End Buttons */}
         </div>
-      </a>
-      {/* End Card */}
+      </div>
     </div>
-    {/* End Grid */}
   </div>
-  {/* End Card Article top */}
+  {/* End Hero */}
+</>
+
     </div>
+    
   )
 }
 

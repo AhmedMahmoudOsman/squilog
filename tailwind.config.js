@@ -13,6 +13,7 @@ export default {
         Dark:"#131819",
         whitex:"#fbfbfb",
         maincolor:"#242535",
+        buttoncolor:"#2563eb",
       },
       fontFamily: {
         Primary: ['Poppins', 'sans-serif'],

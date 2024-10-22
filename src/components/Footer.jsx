@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
 
-<footer className="w-full py-5 sm:py-10 px-4 bg-gray-800"> {/* Container */}
+<footer className="w-full py-5 sm:py-10 px-4 bg-maincolor border"> {/* Container */}
       <h2 className="sr-only">Footer</h2>
       <div className="flex flex-col-reverse sm:flex-row md:justify-between lg:justify-around">
 
@@ -68,7 +68,7 @@ const Footer = () => {
           {/* ::Address */}
           <div className="col-span-2 md:col-span-1 pb-0 md:py-3 px-4 flex flex-col items-center sm:items-start">
             <h3 className="py-1.5 md:py-4 text-xl text-gray-500 font-bold tracking-wide">Address</h3>
-            <p className="md:w-48 text-center sm:text-left text-lg md:text-xl font-medium">Alexandria Egept</p>
+            <p className="md:w-48 text-center sm:text-left text-lg md:text-xl font-medium">Alexandria Egypt</p>
           </div>
           {/* ::Email */}
           <div className="col-span-2 md:col-span-1 pb-0 md:py-3 px-4 flex flex-col items-center sm:items-start">

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Membership = () => {
   return (
@@ -100,13 +101,13 @@ const Membership = () => {
         </li>
       </ul>
 
-      <a
+      <Link
         href="#"
         className="mt-8 block rounded border border-white bg-buttoncolor px-12 py-3 text-center text-sm font-medium text-white hover:bg-indigo-700 hover:ring-1 hover:ring-indigo-700 focus:outline-none focus:ring active:text-indigo-500"
       >
         Get Started
 
-      </a>
+      </Link>
     </div>
 
     <div className="rounded-2xl border border-gray-200 p-6 shadow-sm sm:px-8 lg:p-12">
@@ -172,12 +173,12 @@ const Membership = () => {
         </li>
       </ul>
 
-      <a
+      <Link
         href="#"
-        className="mt-8 block rounded-full border border-indigo-600 bg-white px-12 py-3 text-center text-sm font-medium text-maincolor hover:ring-1 hover:ring-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+        className="mt-8 block rounded border border-white bg-buttoncolor px-12 py-3 text-center text-sm font-medium text-white hover:bg-indigo-700 hover:ring-1 hover:ring-indigo-700 focus:outline-none focus:ring active:text-indigo-500"
       >
         Get Started
-      </a>
+      </Link>
     </div>
   </div>
 </div>

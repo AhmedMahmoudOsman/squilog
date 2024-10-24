@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import '../style/navbar.css';
 import { Link, NavLink } from 'react-router-dom';
 import { FaBars, FaFacebookF, FaInstagram, FaTwitter, FaXmark } from "react-icons/fa6";
 
 const Navbar = () => {
+
+
     const navItem = [
         { path: "/", link: "Home" },
         { path: "/ourstory", link: "Our Story" },
@@ -11,6 +13,7 @@ const Navbar = () => {
         { path: "/articles", link: "Articles" },
         
     ];
+
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleMenu = () => {
@@ -39,7 +42,7 @@ const Navbar = () => {
                     <a href="/" className='hover:text-Diamond'><FaTwitter /></a>
                     <a href="/" className='hover:text-Diamond'><FaInstagram /></a> */}
                     
-                    <button className='group relative inline-flex items-center px-5 py-2.5 rounded shadow-lg outline-none bg-grey-400 text-white font-medium transition-all duration-200 ease-out hover:text-white hover:bg-transparent hover:shadow-none active:top-0.5 focus:outline-none'>Login
+                    <Link to={'/signin'} className='group relative inline-flex items-center px-5 py-2.5 rounded shadow-lg outline-none bg-grey-400 text-white font-medium transition-all duration-200 ease-out hover:text-white hover:bg-transparent hover:shadow-none active:top-0.5 focus:outline-none'>Login
                         {/* span::before */}
                         <span className="absolute h-0 w-0.5 right-0 top-0 bg-buttoncolor transition-all duration-500 ease-out group-hover:h-full" aria-hidden="true"/>
                         <span className="absolute left-0 bottom-0 bg-buttoncolor transition-all duration-500 ease-out w-0.5 h-0 group-hover:h-full" aria-hidden="true"/>        
@@ -48,10 +51,10 @@ const Navbar = () => {
                             <span className="absolute left-0 bottom-0 bg-buttoncolor transition-all duration-500 ease-out w-0 h-0.5 group-hover:w-full" aria-hidden="true"/>
                             <span className="absolute w-0 h-0.5 right-0 top-0 bg-buttoncolor transition-all duration-500 ease-out group-hover:w-full" aria-hidden="true"/>
                         
-                    </button>
+                    </Link>
 
                     
-                    <button className='group relative inline-flex items-center px-5 py-2.5 rounded shadow-lg outline-none bg-buttoncolor text-white font-medium transition-all duration-200 ease-out hover:text-white hover:bg-transparent hover:shadow-none active:top-0.5 focus:outline-none'>Sign Up
+                    <Link to={'/signin'} className='group relative inline-flex items-center px-5 py-2.5 rounded shadow-lg outline-none bg-buttoncolor text-white font-medium transition-all duration-200 ease-out hover:text-white hover:bg-transparent hover:shadow-none active:top-0.5 focus:outline-none'>Sign Up
                         {/* span::before */}
                         <span className="absolute h-0 w-0.5 right-0 top-0 bg-buttoncolor transition-all duration-500 ease-out group-hover:h-full" aria-hidden="true"/>
                         <span className="absolute left-0 bottom-0 bg-buttoncolor transition-all duration-500 ease-out w-0.5 h-0 group-hover:h-full" aria-hidden="true"/>        
@@ -60,7 +63,7 @@ const Navbar = () => {
                             <span className="absolute left-0 bottom-0 bg-buttoncolor transition-all duration-500 ease-out w-0 h-0.5 group-hover:w-full" aria-hidden="true"/>
                             <span className="absolute w-0 h-0.5 right-0 top-0 bg-buttoncolor transition-all duration-500 ease-out group-hover:w-full" aria-hidden="true"/>
                         
-                    </button>
+                    </Link>
 
                    
                 </div>
@@ -94,7 +97,7 @@ const Navbar = () => {
                     }
                     <div>
 
-                     <button className='group relative inline-flex items-center px-5 py-2.5 rounded shadow-lg outline-none bg-grey-400 text-white font-medium transition-all duration-200 ease-out hover:text-white hover:bg-transparent hover:shadow-none active:top-0.5 focus:outline-none'>Login
+                     <button  className='group relative inline-flex items-center px-5 py-2.5 rounded shadow-lg outline-none bg-grey-400 text-white font-medium transition-all duration-200 ease-out hover:text-white hover:bg-transparent hover:shadow-none active:top-0.5 focus:outline-none'>Login
                         {/* span::before */}
                         <span className="absolute h-0 w-0.5 right-0 top-0 bg-buttoncolor transition-all duration-500 ease-out group-hover:h-full" aria-hidden="true"/>
                         <span className="absolute left-0 bottom-0 bg-buttoncolor transition-all duration-500 ease-out w-0.5 h-0 group-hover:h-full" aria-hidden="true"/>        

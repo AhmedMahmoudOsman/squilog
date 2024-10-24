@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Hero() {
   return (
-    <div className='px-4 py-32 mx-auto fo'>
+    <div className='px-4 py-32 mx-auto'>
     <>
   {/* Hero */}
   <div className="relative overflow-hidden rounded">

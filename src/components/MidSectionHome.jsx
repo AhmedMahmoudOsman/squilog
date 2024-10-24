@@ -57,16 +57,16 @@ const MidSectionHome = () => {
               src="https://images.pexels.com/photos/6627792/pexels-photo-6627792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Health-image"
             />
-            {/* <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
+            <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
               Health
-            </button> */}
+            </button>
             <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
           </div>
           <div className="relative group flex justify-center items-center h-full w-full mt-4 md:hidden md:mt-8 lg:hidden">
             <img
               className="object-center object-cover h-full w-full hidden md:block"
               src="https://images.pexels.com/photos/6627792/pexels-photo-6627792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="girl-image"
+              alt="health-image"
             />
             <img
               className="object-center object-cover h-full w-full md:hidden"

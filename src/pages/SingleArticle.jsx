@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import { FaUser ,FaClock } from 'react-icons/fa';
 
 const SingleArticle = () => {
+
+      useEffect(()=>{
+        window.scrollTo(0,0);
+
+      },[])
 
     // load article single
     const data = useLoaderData();

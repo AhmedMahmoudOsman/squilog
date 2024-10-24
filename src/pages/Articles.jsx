@@ -1,8 +1,14 @@
 import React from 'react'
 import ArticlePage from '../components/ArticlePage'
 import Hero from '../components/Hero'
+import { useEffect } from 'react'
 
 const Articles = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+
+  },[])
   
   return (
 
